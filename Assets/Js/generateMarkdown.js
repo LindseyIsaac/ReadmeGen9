@@ -23,10 +23,11 @@ ${renderLicenseBadge(data.license)}
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [License](#license)
 * [Credits](#credits)
 * [How to Contribute](#howtocontribute)
 * [Test](#test)
-* [License](#license)
+
 * [Contact](#contact)
 
 `;
