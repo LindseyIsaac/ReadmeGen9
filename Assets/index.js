@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./Make/generateMarkdown');
+const generateMarkdown = require('../utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 // things a README needs
@@ -29,7 +29,7 @@ const questions = [
         name: 'Usage',
         message: 'Include instructions and screenshots for examples of use.',
       },
-      //List or checkbox? copied from github as suggested by classmate
+      //List or checkbox? choices from github recommended to use by classmate 
       {
         type: 'list',
         name: 'License',
@@ -44,7 +44,7 @@ const questions = [
 
     {
         type: 'input',
-        name: 'How to Contribute?',
+        name: 'Contribute',
         message: 'If you want other developers to be able to contribute please add your guidelines on how to here.'
      },
      //WHAT ARE YOU?????
@@ -57,7 +57,7 @@ const questions = [
       {
         type: 'input',
         name: 'Contact',
-        message: 'Please input a valid Email and github name ',
+        message: 'Please input a valid Email and link your github',
       },
 ];
 
@@ -69,7 +69,10 @@ function writeToFile(fileName, data) {
   fs.writeFile('README.md', generateMarkdown(data), function (err) {
       if (err) {
           return console.log(err);
+      } else {
+        console.log("Yay! Your README has been created!")
       }
+
   });
 }
   
@@ -79,7 +82,7 @@ function writeToFile(fileName, data) {
 
 function init() {
   inquirer.prompt(questions).then((answers) => {
-      writeToFile("../Make/README.md", generateMarkdown(answers));
+      writeToFile("../util/README.md", generateMarkdown(answers));
       console.log('answers');
   });
 }
