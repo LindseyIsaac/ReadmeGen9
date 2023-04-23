@@ -9,55 +9,55 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
-        name: 'project name',
+        name: 'title',
         message: 'What is your projects name?',
       },      
 
       
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Provide a short description.',
       },
   
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'What are the steps required to install your project?',
       },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'Include instructions and screenshots for examples of use.',
       },
       //List or checkbox? choices from github recommended to use by classmate 
       {
         type: 'list',
-        name: 'License',
+        name: 'license',
         message: 'Please select your License.',
         choices: ['None', 'Apache License 2.0', 'GNU General Public License v3.0', 'MIT', 'BSD 2-Clause Simplified License', 'BSD 3-Clause New or Revised License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'],
       },
     {
         type: 'input',
-        name: 'Credits',
+        name: 'credits',
         message: 'List your collaborators and link their GitHub profiles, tutorials used, and all third-party assets.',    
       },
 
     {
         type: 'input',
-        name: 'Contribute',
+        name: 'contribute',
         message: 'If you want other developers to be able to contribute please add your guidelines on how to here.'
      },
      //WHAT ARE YOU?????
      {
         type: 'input',
-        name: 'Test',
+        name: 'test',
         message: 'Provide tests to be included.',
       },
       //this is for the user to reach you with additional questions
       {
         type: 'input',
-        name: 'Contact',
+        name: 'contact',
         message: 'Please input a valid Email and link your github',
       },
 ];
@@ -66,19 +66,16 @@ const questions = [
 // generates the readme?
 //NEEDS TO MAKE A PATH I THINK????
 
-function writeToFile(fileName, data) {
-  return fs.writeFile(fileName, data, function (err) {
-      if (err) {
-          return console.log(err);
-      }
-  });
-}  
+// function writeToFile(fileName, data) {
+//   return fs.writeFile(fileName, data); {
+//   }
+// }  
 // TODO: Create a function to initialize app
 // this will start the creation of the readme I think
 
 function init() {
   inquirer.prompt(questions).then((data) => {
-      writeToFile("./output/README.md", generateMarkdown(data), () => {
+      fs.writeFile("./output/README.md", generateMarkdown(data), () => {
       console.log("Yay! Your README has been created!")
       })
     }
