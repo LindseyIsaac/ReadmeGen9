@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
+//Does the order here matter?
 const fs = require('fs');
+const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
@@ -64,28 +65,24 @@ const questions = [
 // TODO: Create a function to write README file
 // generates the readme?
 //NEEDS TO MAKE A PATH I THINK????
-// data.answers for the readme 
+
 function writeToFile(fileName, data) {
-  fs.writeFile('README.md', generateMarkdown(data), function (err) {
+  return fs.writeFile(fileName, data, function (err) {
       if (err) {
           return console.log(err);
-      } else {
-        console.log("Yay! Your README has been created!")
       }
-
   });
-}
-  
-      
+}  
 // TODO: Create a function to initialize app
 // this will start the creation of the readme I think
 
 function init() {
-  inquirer.prompt(questions).then((answers) => {
-      writeToFile("./utils/README.md", generateMarkdown(answers));
-      console.log('answers');
-  });
-}
+  inquirer.prompt(questions).then((data) => {
+      writeToFile("./output/README.md", generateMarkdown(data), () => {
+      console.log("Yay! Your README has been created!")
+      })
+    }
+  )}
 // Function call to initialize app 
 //DO I need to write any code here?
  init();
