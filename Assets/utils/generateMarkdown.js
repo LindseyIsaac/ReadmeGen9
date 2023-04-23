@@ -2,28 +2,26 @@
 // If there is no license, return an empty string 
 //conditionals
 function renderLicenseBadge(license) {
-  if (license !== 'none');{
+  if (license !== 'none') {
   return `![GitHub license](https://img.shields.io/badge/license-${license}-blueviolet.svg)`;
 }
-return "";
+return"";
 }
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "none") {
     return `\n* [License](#license)\n`;
-  return ""}
+  }
+  return "";
 }
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 if (license !== "none") {
-  return `
-  ## License
-    Using the ${license} license.
-    `;
+  return `## License Using the ${license} license.`;
 }
 return "";
 }
