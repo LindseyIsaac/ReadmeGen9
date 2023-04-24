@@ -58,7 +58,12 @@ const questions = [
       {
         type: 'input',
         name: 'contact',
-        message: 'Please input a valid Email and link your github',
+        message: 'Please input a valid Email',
+      },
+      {
+        type: 'input',
+        name: 'github',
+        message: 'Please input a valid github link',
       },
 ];
 

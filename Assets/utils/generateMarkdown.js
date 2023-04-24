@@ -41,7 +41,8 @@ ${data.description}
 * [Credits](#credits)
 * [Contribute](#contribute)
 * [Test](#test)
-* [Questions](#questions)
+* [Contact](#contact)
+* [Github](#github)
 
 ## Installation
 ${data.installation}
@@ -61,9 +62,11 @@ ${data.contribute}
 ## Test
 ${data.test}
 
-## Questions
-*Contact Email: ${data.email} 
-*Link to Github: ${data.github}
+## Contact
+${data.email} 
+
+## Github
+${data.github}
 `;
 }
 
