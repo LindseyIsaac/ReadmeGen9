@@ -3,7 +3,7 @@
 
 ## Description
 Node.js Challenge: Professional README Generator<br>
-This is used to generate a README.md file using node. Your read me is created from the terminal and returned as a markdown file. 
+This is used to generate a README.md file using node. Your readme is created from the terminal and returned as a markdown file. 
 
 
 ## Table of Contents 
