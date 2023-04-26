@@ -67,10 +67,11 @@ const questions = [
       },
 ];
 
+
+//found that this code is not needed to work kept for learning purposes.
 // TODO: Create a function to write README file
 // generates the readme?
 //NEEDS TO MAKE A PATH I THINK????
-
 // function writeToFile(fileName, data) {
 //   return fs.writeFile(fileName, data); {
 //   }
