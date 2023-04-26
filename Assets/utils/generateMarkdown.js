@@ -67,7 +67,7 @@ ${data.contribute}
 ${data.test}
 
 ## Contact
-${data.email} 
+${data.contact} 
 
 ## Github
 ${data.github}
