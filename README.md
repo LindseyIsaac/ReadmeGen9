@@ -22,24 +22,20 @@ For this to work you will need to install npm inquirer@8.2.4 into your terminal 
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
-    ```md
-    ![screenshot](./Assets/images/stp1.png)
-    ```
-      ```md
-    ![screenshot](./Assets/images/stp2.png)
-    ```
-      ```md
-    ![screenshot](./Assets/images/stp3.png)
-    ```
-       ```md
-    ![screenshot](./Assets/images/stp4.png)
-    ```
-       ```md
-    ![screenshot](./Assets/images/stp5.png)
-    ```
-        ```md
-    ![screenshot](./Assets/images/stp6.png)
-    ```
+    
+![screenshot](./Assets/images/stp1.png)
+    
+![screenshot](./Assets/images/stp2.png)
+    
+![screenshot](./Assets/images/stp3.png)
+    
+![screenshot](./Assets/images/stp4.png)
+   
+![screenshot](./Assets/images/stp5.png)
+   
+![screenshot](./Assets/images/stp6.png)
+   
+[DEMOVIDEO](https://drive.google.com/file/d/1LBPLFP1KDvjS6vUQbJmJ4i-CI6GIRjcD/view)
 
     
 ## Credits
