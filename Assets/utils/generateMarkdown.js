@@ -34,7 +34,7 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
-##Description
+## Description
 ${data.description}
 
 ## Table of Contents
@@ -75,34 +75,3 @@ ${data.github}
 }
 
 module.exports = generateMarkdown;
-
-
-
-// function renderLicenseBadge(license) {
-//   if (!license) {
-//     return ``;
-//   } else {
-//     return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(license)})`
-//   }
-// }
-
-// function renderLicenseLink(license) {
-//   if (license === 'MIT') {
-//     return `https://lbesson.mit-license.org/`
-//   }
-//   if (license === 'GPL') {
-//     return `http://perso.crans.org/besson/LICENSE.html`
-//   }
-//   if (license === 'CC--0') {
-//     return `https://creativecommons.org/licenses/by-nd/4.0` 
-//   }
-// }
-
-// function renderLicenseSection(license) {
-//   if (!license) {
-//     return ``;
-//   } else {
-//     return `## Licenses
-//     This project is covered under the ${license} license. To learn more about what this means, click the license button at the top.`
-//   }
-// }
