@@ -37,6 +37,10 @@ Provide instructions and examples for use. Include screenshots as needed.
        ```md
     ![screenshot](./Assets/images/stp5.png)
     ```
+        ```md
+    ![screenshot](./Assets/images/stp6.png)
+    ```
+
     
 ## Credits
 Peer Consultation:<br>
@@ -46,7 +50,9 @@ Peer Consultation:<br>
 Worked alongside:<br>
 ***Jacqueline Martinez*** https://github.com/JackieAmartinez<br>
 ## License
+MIT License
 
+Copyright (c) 2023 Lindsey
 ## Features
 N/A
 ## How to Contribute
